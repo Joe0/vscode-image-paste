@@ -1,0 +1,59 @@
+{
+  "name": "vscode-image-paste",
+  "displayName": "VSCode Image Paste",
+  "description": "Paste images from clipboard directly into VSCode terminal",
+  "version": "1.0.0",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other",
+    "Snippets"
+  ],
+  "keywords": [
+    "image",
+    "paste",
+    "clipboard",
+    "terminal",
+    "screenshot"
+  ],
+  "activationEvents": [
+    "onCommand:vscode-image-paste.pasteImage"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "vscode-image-paste.pasteImage",
+        "title": "Paste Image into Terminal",
+        "category": "Terminal"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "vscode-image-paste.pasteImage",
+        "key": "ctrl+shift+v",
+        "when": "terminalFocus"
+      }
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "VSCode Image Paste",
+      "properties": {
+        "vscodeImagePaste.saveDirectory": {
+          "type": "string",
+          "default": "",
+          "description": "Directory where images will be saved. Leave empty for system temp directory, use ~ for home directory, or provide absolute/relative path."
+        }
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/vscode-image-paste.git"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0"
+  }
+}
