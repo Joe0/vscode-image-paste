@@ -142,6 +142,16 @@ Make sure you're using PowerShell 7+ and that WSL is properly configured
 2. Reload VSCode (Ctrl+Shift+P -> "Reload Window")
 3. Check the Output panel (View -> Output -> "Extension Host") for errors
 
+## Support This Project
+
+If you find this extension useful, consider supporting its development:
+
+**Bitcoin (BTC):**
+`bc1qt0wawff05van54vuasqu9sluzymuhhpl3l2z3k`
+
+**Ethereum (ETH):**
+`0x538AFaB14652792fA31a58F16c1d85191FAFC30E`
+
 ## License
 
 MIT
